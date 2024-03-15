@@ -1,0 +1,109 @@
+/* trade Section Style */
+.trade--section {
+  display: flex;
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trade--section--title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+.trade--section--subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.img-flut-litecoin {
+  background-size: cover;
+  width: 190px;
+  height: 190px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 326%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 10%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+.img-flut-bit {
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 346%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 90%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+
+.trade--features-content {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que as caixas quebrem para a próxima linha */
+  justify-content: space-between; /* Distribui o espaço entre as caixas */
+}
+
+.trade--features-box {
+  width: calc(
+    30% - 10px
+  ); /* Define a largura para 50% do container (menos a margem entre as caixas) */
+  padding: 20px;
+  margin-bottom: 20px; /* Adiciona margem na parte inferior */
+  box-sizing: border-box; /* Inclui o padding e a borda na largura */
+}
+
+/* Define o estilo dos itens dentro de .trade--features-box */
+.trade--features-box-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trade--features-icon {
+  width: 65px;
+  height: 65px;
+  background-size: contain;
+  padding-right: 30px;
+}
+
+.trade--features-title {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+}
+
+.trade--features-subtitle {
+  font-size: 24px;
+  color: var(--gray);
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .img-flut-litecoin,
+  .img-flut-bit {
+    display: none;
+  }
+  .trade--buy {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trade--buy--title {
+    text-align: center;
+  }
+  .trade--buy--img {
+    width: 340px;
+    height: 473px;
+  }
+  .trade--section--title {
+    font-size: 40px;
+  }
+  .img-flutter-etherium {
+    display: none;
+  }
+  .trade--features-content {
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .trade--features-box {
+    width: 100%; /* Define a largura para 100% do container */
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "trade": [
+    {
+      "id": "1",
+      "src": "./img/buy_bitcoin.png",
+      "title": "Bitcoin",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "value": "43.7K"
+    },
+    {
+      "id": "2",
+      "src": "./img/buy_litecoin.png",
+      "title": "Litecoin",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "value": "158K"
+    },
+    {
+      "id": "3",
+      "src": "./img/buy_ethereum.png",
+      "title": "Ethereum",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "value": "3K"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "src": "./img/person_1.png",
+      "name": "Cameron Williamson",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "subtitle": "FX Trader"
+    },
+    {
+      "id": "2",
+      "src": "./img/person_2.png",
+      "name": "Bessie Cooper",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "subtitle": "Stock Manager"
+    },
+    {
+      "id": "3",
+      "src": "./img/person_3.png",
+      "name": "Albert Flores",
+      "description": "Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.",
+      "subtitle": "Crypto Analyst"
+    }
+  ]
+}

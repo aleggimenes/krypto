@@ -1,0 +1,82 @@
+/* Hero Section Style */
+.hero--section {
+  display: flex;
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../../../public/img/bg.png") no-repeat center;
+  background-size: cover;
+}
+.imagem-flutuante-bit {
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 23%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 20%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+.imagem-flutuante-mon {
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 80%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 80%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+.imagem-flutuante-etherium {
+    background-size: cover;
+    width: 210px;
+    height: 210px;
+    position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+    top: 89%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+    left: 10%;
+    transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+  }
+  .imagem-flutuante-litecoin {
+    background-size: cover;
+  width: 190px;
+  height: 190px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 33%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 80%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+  }
+.hero--section--title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+.hero--section--subtitle {
+  text-align: center;
+  font-size: 18px;
+}
+
+.hero--coin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+}
+.hero--section--coin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+}
+.hero--section--coin--text {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .imagem-flutuante-bit,
+  .imagem-flutuante-mon,
+  .imagem-flutuante-etherium,
+  .imagem-flutuante-litecoin {
+    display: none; /* Esconde as imagens quando a largura da tela for menor ou igual a 1200px */
+  }
+}

@@ -1,0 +1,85 @@
+/* trade Section Style */
+.trade--section {
+  display: flex;
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trade--section--title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+.trade--section--subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.img-flut-litecoin {
+  background-size: cover;
+  width: 190px;
+  height: 190px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 326%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 10%; /* Defina a distância da esquerda */
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+.trade-testimonial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 28px;
+}
+.trade-testimonial--container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 1px solid red;
+  border-radius: 3%;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: box-shadow 0.3s ease;
+}
+.trade-testimonial--container:hover {
+  box-shadow: 0 0 20px 0 var(--red);
+}
+.trade-testimonial--img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.trade-testimonial--text {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.trade--testimonial--img-person {
+  width: 48px;
+  height: 48px;
+}
+.trade--testimonial--name {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.trade--testimonial--subtitle {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .img-flut-litecoin,
+  .img-flut-bit {
+    display: none;
+  }
+  .trade-testimonial{
+    flex-direction: column;
+  }
+}

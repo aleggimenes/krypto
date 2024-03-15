@@ -1,0 +1,111 @@
+/* trade Section Style */
+.trade--section {
+    display: flex;
+    padding: 133.333px 85.333px 133.333px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .trade--section--title {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .trade--section--subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--gray);
+  }
+  
+  .trade--container {
+    display: flex;
+    flex-direction: column;
+    gap: 49.22px;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+  }
+  .img-flutter-etherium {
+    background-size: cover;
+    width: 210px;
+    height: 210px;
+    position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+    top: 189%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+    left: 85%;
+  }
+  
+  .trade--step {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px;
+  }
+  .trade--step--img {
+    width: 540px;
+    height: 673px;
+  }
+  .trade--step--container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .trade--step--title {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--red);
+    margin-bottom: 32px;
+  }
+  .trade--step--subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--red);
+    padding-right: 72px;
+  }
+  .trade--step--circle {
+    background-color: var(--red);
+    height: 42px;
+    width: 42px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trade--step--btn {
+    padding: 10px;
+    border-radius: 30px;
+    border: 0.1ch solid var(--red);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    transition: box-shadow 0.3s ease;
+  }
+  .trade--step--btn:hover {
+    box-shadow: 0 0 20px 0 var(--red); /* Adiciona box shadow vermelho no hover */
+  }
+  .trade--step--number {
+    color: #160e33;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 1200px) {
+    .trade--step {
+      flex-direction: column;
+      align-items: center;
+    }
+    .trade--step--title {
+      text-align: center;
+    }
+    .trade--step--img {
+      width: 340px;
+      height: 473px;
+    }
+    .trade--section--title {
+      font-size: 40px;
+    }
+    .img-flutter-etherium {
+      display: none;
+    }
+  }
+  
