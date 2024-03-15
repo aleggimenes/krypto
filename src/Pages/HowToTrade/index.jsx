@@ -11,7 +11,6 @@ export default function HowToTrade() {
   });
 
   useEffect(() => {
-    console.log("inview: ", inView);
     if (inView) {
       setIsVisible(true);
     }
