@@ -27,23 +27,23 @@
   transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
 }
 .imagem-flutuante-etherium {
-    background-size: cover;
-    width: 210px;
-    height: 210px;
-    position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
-    top: 89%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
-    left: 10%;
-    transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
-  }
-  .imagem-flutuante-litecoin {
-    background-size: cover;
+  background-size: cover;
+  width: 210px;
+  height: 210px;
+  position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
+  top: 89%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
+  left: 10%;
+  transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
+}
+.imagem-flutuante-litecoin {
+  background-size: cover;
   width: 190px;
   height: 190px;
   position: absolute; /* ou 'fixed', dependendo do comportamento desejado */
   top: 33%; /* Posicione a imagem a 50% da altura do contêiner pai ou da janela do navegador */
   left: 80%; /* Defina a distância da esquerda */
   transform: translateY(-50%); /* Alinhe verticalmente a imagem ao centro */
-  }
+}
 .hero--section--title {
   font-size: 80px;
   font-weight: bold;
@@ -72,11 +72,47 @@
   font-size: 20px;
 }
 
+.hero--section--contdown-box {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--section--contdown-contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.hero--section--contdown-box-title {
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero--section--contdown-box-subtitle {
+  font-size: 14px;
+  color: white;
+}
+.hero--section--box-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+}
 @media (max-width: 1200px) {
   .imagem-flutuante-bit,
   .imagem-flutuante-mon,
   .imagem-flutuante-etherium,
   .imagem-flutuante-litecoin {
     display: none; /* Esconde as imagens quando a largura da tela for menor ou igual a 1200px */
+  }
+  .hero--section--box-button {
+    flex-direction: column;
   }
 }
