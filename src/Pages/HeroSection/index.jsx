@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function HeroSection() {
   const [countdown, setCountdown] = useState({
@@ -9,6 +11,17 @@ export default function HeroSection() {
     minutes: 23,
     seconds: 35,
   });
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
+  // Atualiza o estado quando o componente está visível
+  if (inView && !isVisible) {
+    setIsVisible(true);
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       // Atualizar o estado do countdown subtraindo 1 segundo
@@ -96,21 +109,21 @@ export default function HeroSection() {
             <p className="hero--section--contdown-box-title">
               {countdown.hours}
             </p>
-            <p className="hero--section--contdown-box-subtitle">DAYS</p>
+            <p className="hero--section--contdown-box-subtitle">HOURS</p>
           </div>
           :
           <div className="hero--section--contdown-contain">
             <p className="hero--section--contdown-box-title">
               {countdown.minutes}
             </p>
-            <p className="hero--section--contdown-box-subtitle">DAYS</p>
+            <p className="hero--section--contdown-box-subtitle">MINUTES</p>
           </div>
           :
           <div className="hero--section--contdown-contain">
             <p className="hero--section--contdown-box-title">
               {countdown.seconds}
             </p>
-            <p className="hero--section--contdown-box-subtitle">DAYS</p>
+            <p className="hero--section--contdown-box-subtitle">SECONDS</p>
           </div>
         </div>
         <div className="hero--section--box-button">
